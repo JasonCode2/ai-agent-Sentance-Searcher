@@ -1,13 +1,11 @@
 from tools.tools import *
 
 TOOLS = {
-    "cart_add": cart_add,
-    "cart_total": cart_total,
-    "cart_list": cart_list,
+    "word_counter": word_counter,
+    "common_word_finder": common_word_finder,
 }
 
 TOOL_DESCRIPTIONS = {
-    "cart_add": "Add an item to the cart. args: item:str, cost:int",
-    "cart_total": "Return total cost of all items in cart. args: none",
-    "cart_list": "Return all items currently in cart. args: none",
+    "word_counter": "Count total words in text. args: text:str",
+    "common_word_finder": "Find the most common word. args: text:str",
 }

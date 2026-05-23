@@ -1,14 +1,14 @@
+
 from core.state import STATE
 
-def cart_add(item: str, cost: int):
-    STATE["cart"].append({
-        "name": item,
-        "price": cost
-    })
-    return f"Added {item} for ${cost}"
+def word_counter():
+    text = STATE["current_text"]
+    words = text.split()
+    return len(words)
 
-def cart_total():
-    return sum(entry["price"] for entry in STATE["cart"])
-
-def cart_list():
-    return STATE["cart"]
+def common_word_finder(text: str):
+    words = text.lower().split()
+    most_common = max(set(words), key=words.count)
+    count = words.count(most_common)
+    return f"{most_common} ({count} times)"6
+STATE["current_text"]

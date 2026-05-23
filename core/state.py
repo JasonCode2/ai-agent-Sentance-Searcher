@@ -1,3 +1,3 @@
 STATE = {
-    "cart": []
+    "current_text": ""
 }
